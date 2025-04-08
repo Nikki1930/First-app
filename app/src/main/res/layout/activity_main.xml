@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:layout_margin="15dp"
+
+            android:textSize="22dp"
+            android:background = "@color/material_dynamic_neutral_variant80"
+            android:hint="Enter 1st Number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:layout_margin="15dp"
+
+                android:textSize="22dp"
+                android:background = "@color/material_dynamic_neutral_variant80"
+                android:hint="Enter 2nd Number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tVAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_margin="10dp"
+
+        android:background="@color/material_dynamic_neutral_variant90"
+        android:padding="16.5dp"
+        android:text="Your Answer"
+        android:textSize="22dp" />
+
+  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="25dp"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:text="ADD" />
+
+                <Button
+                    android:id="@+id/btnSubtract"
+                    android:layout_width="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="25dp"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:text="SUBTRACT" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnMultiply"
+                    android:layout_width="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="25dp"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:text="MULTIPLY" />
+
+                <Button
+                    android:id="@+id/btnDivide"
+                    android:layout_width="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="25dp"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:text="DIVISION" />
+            </LinearLayout>
+</LinearLayout>
